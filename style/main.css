@@ -9,9 +9,11 @@
     box-sizing: border-box;/*Elementos de internos são forçados a ter o tamanho da box*/
 }
 
+/*Elementos Base*/
 body {
     background: var(--preta);
     font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
 }
 
 header .container {
@@ -36,4 +38,26 @@ header nav a {
 
 header nav a:hover{
     color: #ffffff;
+}
+
+/*Filme Principal*/
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%) , url("/Projetos/Netflix/img/capa-house.jpg");
+
+    height: 400px;
+    background-size: cover; /*Cobre toda a box ajustando o tamanho*/
+
+    display: flex;
+    flex-direction: column;/*São invertidos dependendo do parametro do flex-direction*/
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+}
+
+.titulo {
+    font-size: 40px;
 }
