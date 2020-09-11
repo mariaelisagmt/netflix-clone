@@ -1,0 +1,39 @@
+:root {/*Variaveis css*/
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {/*Resetando estilo padrão css*/
+    margin: 0;/*Margem dos elementos*/
+    padding: 0;/*Espaçamento entre elementos*/    
+    box-sizing: border-box;/*Elementos de internos são forçados a ter o tamanho da box*/
+}
+
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container {
+    display: flex; /*Flexbox - alinhar os elementos em tela*/
+    flex-direction: row;/*Alinhado por linha de forma padrão no display flex*/
+    align-items: center; /*Alinhamento vertical*/
+    justify-content: space-between; /*Alinhamento horizontal */
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none; /*retirando sublinhado*/
+    color: #aaaaaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #ffffff;
+}
